@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" media="all" href="styles/style.css">
+
+    <title>Lenguaje oculto</title>
+    
+</head>
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <img src="./img/Logo.png" alt="Logo">
+        </nav>
+    </header>
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <textarea class="container__input" placeholder="Ingrese texto aqui" id="valorUsuario"  rows="8" cols="80" ></textarea>  
+            <p class="indica"> <img class="imagen" src="./img/Vector.png" alt="">Solo letras sin acento.</p>  
+                <div class="presentacion__enlaces">
+                    
+                    <button onclick="encriptar();" class="btn9">Encriptar</button>
+                            <button onclick="desencriptar();" class="btn8" id="reiniciar">Desencriptar</button></div>
+                </div>
+               
+        </section>
+            <section class="cuadroDos">
+                <textarea class="texto__parrafo" id="textoGuardado" rows="8" cols="80" placeholder="Ningún texto encontrado" aria-placeholder="5454" readonly ></textarea>
+                        <div>
+                            <button onclick="copiarTexto()" class="btn10" id="botonCopiar"><span>Copiar texto</span>
+    
+                            </button>
+                              
+                        
+                        </div>
+            </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Alura Latam</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
